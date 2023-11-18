@@ -1,0 +1,146 @@
+/* Resetowanie podstawowych stylów */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+body {
+    background: #06070a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+
+}
+
+*{
+    transition: all 300ms;
+}
+/* Globalne style */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: #0a0b1059;
+    position: fixed;
+    padding: 7px;
+    backdrop-filter: blur(20px);
+    top: 0;
+    width: 100%;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #06070a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0c0e14;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0c0e14;
+  }
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 7px;
+}
+a {
+    
+    color: inherit;
+    text-decoration: none;
+}
+nav a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+/* Styl dla paska wyszukiwania */
+.search-bar {
+    display: flex;
+    margin-top: 5%;
+    max-width: 88%;
+    margin-left: 4%;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 15px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Karty dystrybucji */
+.distro-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 3%;
+}
+
+.card {
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    /* border: 1px solid #ddd; */
+    border-radius: 7px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.card button {
+    color: #008eff;
+    background-color: #3498db1c;
+    border: 1px solid #008eff;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-top: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.card button:hover {
+    color: #fff;
+    background-color: #2980b9;
+}
+
+/* Przykładowe dystrybucje */
+.card:nth-child(1) img {
+    src: url('ubuntu.jpg');
+}
+
+.card:nth-child(2) img {
+    src: url('fedora.jpg');
+}

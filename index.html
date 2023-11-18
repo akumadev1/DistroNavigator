@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DistroNavigator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="img/" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <ul class="navbar-items flexbox-col">
+
+        <li class="navbar-item flexbox-left">
+          <a class="navbar-item-inner flexbox-left">
+            <span class="link-text">Home</span>
+          </a>
+        </li>
+        <li class="navbar-item flexbox-left">
+            <a class="navbar-item-inner flexbox-left">
+              <span class="link-text">About</span>
+            </a>
+          </li>
+          <li class="navbar-item flexbox-left">
+            <a class="navbar-item-inner flexbox-left">
+              <span class="link-text">Support 💜</span>
+            </a>
+          </li>
+          <li class="navbar-item flexbox-left">
+            <a class="navbar-item-inner flexbox-left">
+              <span class="link-text">GitHub</span>
+            </a>
+          </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <!-- Pole wyszukiwania (lewa strona) -->
+      <div class="search-bar">
+        <input type="text" placeholder="Search...">
+      </div>
+      <!-- Filtry wyszukiwania (lewa strona pod polem wyszukiwania) -->
+      <!-- Karty z Dystrybucjami (prawa strona) -->
+      <div class="distro-cards">
+        <!-- Karta 1 -->
+        <div class="card">
+          <img src="https://wallpapers.com/images/hd/ubuntu-4k-djsh5p3j3atjpe28.jpg" alt="Ubuntu">
+          <h3>Ubuntu</h3>
+          <p>Ubuntu is a popular Debian-based Linux distribution.</p>
+          <p>Versions: 22.04.3 LTS, 23.10</p>
+          <button>
+            <a href="https://ubuntu.com/download">Download</a>
+          </button>
+        </div>
+        <!-- Fedora -->
+        <div class="card">
+          <img src="https://r4.wallpaperflare.com/wallpaper/880/762/390/fedora-linux-wallpaper-bb96acade3b1efb9a5143be90dcc9c10.jpg" alt="Fedora">
+          <h3>Fedora</h3>
+          <p>Fedora is a community-supported distribution sponsored by Red Hat.</p>
+          <p>Versions: 39</p>
+          <button>
+            <a href="https://fedoraproject.org/">Download</a>
+          </button>
+        </div>
+        <!-- Debian -->
+        <div class="card">
+          <img src="https://r4.wallpaperflare.com/wallpaper/18/335/596/debian-linux-minimalism-material-minimal-wallpaper-6806bde8b0d08c8860ec21fed8e234ea.jpg" alt="Debian">
+          <h3>Debian</h3>
+          <p>Debian is known for its stability and package management system.</p>
+          <p>Versions: 12</p>
+          <button>
+            <a href="https://www.debian.org/distrib/">Download</a>
+          </button>
+        </div>
+        <!-- Arch Linux -->
+        <div class="card">
+          <img src="https://r4.wallpaperflare.com/wallpaper/633/411/831/linux-gradient-unix-arch-linux-technology-hd-wallpaper-59c0885d41ba0dcb46f7d88fa051668d.jpg" alt="Arch Linux">
+          <h3>Arch Linux</h3>
+          <p>Arch Linux follows a rolling-release model and allows users to build their system.</p>
+          <p>Versions: 2023.11.01</p>
+          <button>
+            <a href="https://archlinux.org/download/">Download</a>
+          </button>
+        </div>
+        <!-- CentOS -->
+        <div class="card">
+          <img src="https://images.pling.com/img/00/00/56/26/59/1442415/e31de5b7d377f68ee3f759a09a217af177454e79d40edb5202a39c32c748e5a689e2.png" alt="CentOS">
+          <h3>CentOS</h3>
+          <p>CentOS is a free and open-source enterprise Linux distribution derived from RHEL.</p>
+          <p>Versions: 8.5-2111</p>
+          <button>
+            <a href="https://www.centos.org/">Download</a>
+          </button>
+        </div>
+        <!-- openSUSE -->
+        <div class="card">
+          <img src="https://r4.wallpaperflare.com/wallpaper/543/960/927/linux-opensuse-wallpaper-8910f80db1aabd6b062708aff081869d.jpg" alt="openSUSE">
+          <h3>openSUSE</h3>
+          <p>openSUSE is a Linux distribution sponsored by SUSE Software Solutions Germany.</p>
+          <p>Versions: 15.5</p>
+          <button>
+            <a href="https://pl.opensuse.org/Witamy_w_openSUSE.org">Download</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
