@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+* {
+  transition: all 300ms;
+}
+.link-text:hover {
+  text-shadow: 0 0 10px;
+}
+.support-section {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.support-description {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Dodaj poniższy kod do istniejącego arkusza stylów */
+.support-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.support-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+  width: 70%;
+  height: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.warning {
+  font-size: 11px;
+  color: #ff5c5c;
+  background-color: #ff00001f;
+  padding: 9px;
+  border: 1px solid red;
+  border-radius: 6px;
+}
+.support-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://64.media.tumblr.com/45492f40162b2435bf0f4e45c585abcc/64d4773ea716cf5f-23/s500x750/6c68a6ea946275bd2287fd02c199e6739b47b81e.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px); /* Dodaj filtr rozmycia bezpośrednio tutaj */
+  z-index: -1;
+}
+
+.amount {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.pay-button {
+  background-color: #a6a6a626;
+  color: white;
+  padding: 10px;
+  width: 7.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pay-button:hover{
+  background-color: #000000;
+  padding: 11px;
+}
+
+/* Globalne style */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.221);
+  position: fixed;
+  padding: 7px;
+  backdrop-filter: blur(20px);
+  top: 0;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #06070a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0c0e14;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0c0e14;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 7px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+/* Styl dla paska wyszukiwania */
+.search-bar {
+  display: flex;
+  margin-top: 5%;
+  max-width: 88%;
+  margin-left: 4%;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid #cdef84;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Karty dystrybucji */
+.distro-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+.copyright {
+  font-size: 11px;
+  font-weight: 100;
+  text-align: center;
+  padding: 1.1em;
+}
+.card {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.card > .button {
+  color: #1b1c17;
+  background-color: #cdef84;
+  border: 1px solid #cdef84;
+  padding: 10px 15px;
+  border-radius: 7px;
+  display: inline-flex;
+  margin-top: 10px;
+  width: 27%;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+.card .button:hover {
+  color: #fff;
+  background-color: #cdef8437;
+}
+
+/* Przykładowe dystrybucje */
