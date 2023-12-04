@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+:root {
+  --dark-bg:hsl(224, 33%, 9%);
+  --txt-dark:hsl(0, 0%, 100%);
+  --txt-light:hsl(0, 0%, 0%);
+  --btn:hsl(211, 100%, 50%);
+  --btn-hover:hsla(211, 100%, 50%, 0.212);
+}
+body {
+  background: var(--dark-bg);
+  color: var(--txt-dark);
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+* {
+  transition: all 300ms;
+}
+.navbar {
+  background-color: #13182850;
+  padding: 8px;
+  backdrop-filter: blur(11px);
+  text-align: left;
+  position: fixed;
+  width: 60%; /* Zmieniona wartość na 80% */
+  top: 0;
+  border-radius: 11px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 2%;
+  left: 18%; /* Dodane ustawienie odstępu z lewej strony */
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navbar-links {
+      margin-top: 10px;
+  }
+
+  .navbar-logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
+.navbar-logo {
+  max-height: 40px;
+  margin-right: 10px; /* Added margin for spacing between logo and links */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  margin: 0 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover {
+  text-shadow: 0 0 5px var(--btn);
+  color: var(--btn);
+  border-radius: 5px;
+}
+.link-text:hover {
+  text-shadow: 0 0 10px;
+}
+.support-section {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.support-description {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+/* Dodaj poniższy kod do istniejącego arkusza stylów */
+.support-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.support-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 8px;
+  width: 70%;
+  height: 70px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.warning {
+  font-size: 11px;
+  color: #ff5c5c;
+  background-color: #ff00001f;
+  padding: 9px;
+  border: 1px solid red;
+  border-radius: 6px;
+}
+.support-option::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('https://64.media.tumblr.com/45492f40162b2435bf0f4e45c585abcc/64d4773ea716cf5f-23/s500x750/6c68a6ea946275bd2287fd02c199e6739b47b81e.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(5px); /* Dodaj filtr rozmycia bezpośrednio tutaj */
+  z-index: -1;
+}
+
+.amount {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.pay-button {
+  background-color: #a6a6a626;
+  color: white;
+  padding: 10px;
+  width: 7.5em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pay-button:hover{
+  background-color: #000000;
+  padding: 11px;
+}
+
+/* Globalne style */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--btn);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--btn);
+}
+#navbar {
+  background-color: rgba(0, 0, 0, 0.221);
+  position: fixed;
+  padding: 7px;
+  backdrop-filter: blur(20px);
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left side - Title and Links */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.navbar-items {
+  list-style: none;
+  display: flex;
+  padding: 7px;
+}
+
+.navbar-item {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.navbar-item-inner {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  position: relative;
+}
+
+.navbar-item-inner:hover {
+  text-shadow: 0 0 10px;
+}
+
+/* Right side - Theme Toggle Button */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle-button {
+  background-color: transparent;
+  border: none;
+  color: var(--btn);
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 20px;
+}
+
+.theme-toggle-button:hover {
+  text-shadow: 0 0 10px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/* Styl dla paska wyszukiwania */
+.search-bar {
+  display: flex;
+  margin-top: 5%;
+  max-width: 88%;
+  margin-left: 4%;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 15px;
+  background: transparent;
+  border: 1px solid var(--btn);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/* Karty dystrybucji */
+.distro-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 3%;
+}
+.copyright {
+  font-size: 11px;
+  font-weight: 100;
+  text-align: center;
+  padding: 1.1em;
+}
+.card {
+  width: 300px;
+  margin: 15px;
+  padding: 15px;
+  /* border: 1px solid #ddd; */
+  border-radius: 7px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.card > .button {
+  color: var(--txt-dark);
+  background-color: var(--btn);
+  border: 1px solid var(--btn);
+  padding: 10px 15px;
+  border-radius: 7px;
+  display: inline-flex;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.card .button:hover {
+  color: #fff;
+  background-color: var(--btn-hover);
+}
+
+/* Przykładowe dystrybucje */
